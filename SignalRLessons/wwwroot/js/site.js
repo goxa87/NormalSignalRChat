@@ -41,7 +41,8 @@
             }
         })
         let counter = $(opponent).children('.opponent-message-count');
-        if ($(counter).text !== '') {
+
+        if ($(counter).text() !== '') {
             counter.text(Number.parseInt($(counter).text()) + 1);
         } else {
             counter.text('1');
