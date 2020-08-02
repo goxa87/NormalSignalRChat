@@ -1,0 +1,39 @@
+﻿@model SignalRLessons.Models.ViewModels.RegistrationVM
+
+@{
+    ViewData["Title"] = "Регистрация";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="small-container">
+    <div class="top-page-header">Зарегестрироваться</div>
+    <div class="identity-cintainer">
+        <form asp-action="Registration" asp-antiforgery="true" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <label class="StartAdd-label" asp-for="Email"></label><br>
+            <span asp-validation-for="Email"></span>
+            <input class="form-entry-title" type="text" asp-for="Email"><br>
+
+
+            <label class="StartAdd-label" asp-for="Password"></label><br>
+            <span asp-validation-for="Password"></span>
+            <input class="form-entry-title" type="password" asp-for="Password"><br>
+
+            <label asp-for="СonfirmPassword" class="StartAdd-label"></label><br>
+            <span asp-validation-for="СonfirmPassword"></span>
+            <input class="form-entry-title" type="password" asp-for="СonfirmPassword"><br>
+
+            <label class="StartAdd-label" asp-for="Name"></label><br>
+            <span asp-validation-for="Name"></span>
+            <input class="form-entry-title" type="text" asp-for="Name"><br>
+
+            <label class="form-label" asp-for="Photo"></label>
+            <span asp-validation-for="Photo"></span><br>
+            <input class="form-date" type="file" asp-for="Photo" /><br>
+
+            <input type="submit" value="Регистрация"><br>
+        </form>
+    </div>
+</div>
+
+@{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}

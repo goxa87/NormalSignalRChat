@@ -1,0 +1,22 @@
+﻿@model List<SignalRLessons.Models.DBO.User>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach(var user in Model)
+{
+    <hr>
+    <div class="row flex-hsc">
+        <div class="col-sm-2">
+            <img src="@user.Photo" class="mid-img"/>
+        </div>
+        <div class="col-sm-8">
+            <div class="green-item">@user.Name</div>
+        </div>
+        <div class="col-sm-2">
+            <a asp-action="Chat" asp-controller="Chat" asp-route-opponent="@user.Id">
+                <div class=" green-item green-button">Начать чат</div>
+            </a>
+        </div>
+    </div>
+}

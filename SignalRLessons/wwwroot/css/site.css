@@ -1,0 +1,202 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+  text-decoration:none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+  
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin: 0;
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+.container{
+    max-width:1240px;
+    margin:0 auto;
+}
+.menu{
+    background-color:lightseagreen;
+    border-bottom: 1px solid #a1e8a1;
+}
+.menu-item {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 4px 16px;
+    color: white;
+}
+.menu-item:hover {
+    color: black;
+    background-color: #a1e8a1;
+    border-radius: 4px;
+}
+.flex-hss{
+    display:flex;
+}
+.flex-hsbs {
+    display: flex;
+    justify-content:space-between;
+}
+.mid-img{
+    max-height: 100px;
+    max-width: 100px;
+}
+.small-img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.green-item {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 4px 16px;
+    color: white;
+    border-radius: 4px;
+    background-color: lightseagreen;
+}
+
+.green-button{
+    cursor: pointer;
+}
+    .green-button:hover {
+        color: black;
+        background-color: #a1e8a1;
+        border-radius: 4px;
+    }
+.flex-hsc{
+    display:flex;
+    align-items:center;
+
+}
+.flex-vsbs{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center
+}
+hr {
+    margin: 16px 0;
+}
+.chat-main{
+    height: calc(100vh - 125px);
+    width:100%;
+}
+.right-side{
+    flex-basis:1000px;
+}
+.message-list-title {
+    height: 45px;
+    background-color: yellow;
+    width: 100%;
+    padding: 8px;
+
+}
+.chat-list {
+    background-color: lightseagreen;
+    overflow-y: auto;
+    max-height:100%;
+    width: 350px;
+}
+.message-list {
+    flex-basis: 100vh;
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    width: 100%;
+}
+.message{
+    padding: 4px;
+    width:100%;
+    box-sizing:border-box;
+    margin:4px;
+    background-color: #eee;
+}
+.messge-form{
+    width: 100%;
+}
+#message {
+    width: calc(100% - 100px);
+    padding: 4px;
+    font-size: 16px;
+}
+.opponent-name{
+    word-break: break-word;
+    color:white;
+    max-width: calc(100% - 40px);
+}
+.opponent-message-count{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin: 0 8px;
+}
+.opponent{
+    padding: 6px;
+    flex-wrap:nowrap;
+    cursor:pointer;
+}
+.message-text{
+    font-size: 17px;
+
+}
